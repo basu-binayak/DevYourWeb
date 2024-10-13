@@ -1,0 +1,113 @@
+body {
+    padding: 50px;
+}
+
+/* style.css */
+
+#container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Aligns at the top */
+    height: 100vh;
+    padding-top: 20px; /* Adds some space from the top */
+}
+
+#css_logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    animation: bobble 5s cubic-bezier(1,.53,.24,1.24);
+    transition: transform .1s cubic-bezier(1,.53,.24,1.24);
+}
+
+/* https://cubic-bezier.com/#.17,.67,.83,.67 */
+
+/* @keyframes bobble {
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(400px);
+    }
+    75% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+} */
+
+/* transform: scale3d(1.2, 1.2, 1)
+    This uses the scale3d() function to scale (resize) the element in 3 dimensions (X, Y, and Z axes).
+    1.2 on X-axis: The logo will be 1.2 times wider than its original width.
+    1.2 on Y-axis: The logo will be 1.2 times taller than its original height.
+    1 on Z-axis: No scaling effect on the depth (Z-axis), meaning it stays flat in 2D.
+rotate(45deg)
+    Rotates the logo by 45 degrees clockwise when hovered. */
+#css_logo:hover {
+    transform: scale3d(1.2, 1.2, 1) rotate(45deg);
+}
+
+
+@keyframes bobble {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate3d(200px, 400px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+    }
+}
+
+.css_logo img {
+    position: relative;
+    top: 0px;
+    transition: top 1s steps(5, end);
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px;
+    animation: slide 5s infinite;
+}
+#circle1 {
+    animation-timing-function: ease-in-out;
+    background-color: #E84855;
+}
+#circle2 {
+    animation-timing-function: linear;
+    background-color: #0099FF;
+}
+#circle3 {
+    animation-timing-function: cubic-bezier(0, 1, .76, 1.14);
+    background-color: #FFCC00;
+}
+#container-circle {
+    width: 550px;
+    background-color: #FFF;
+    border: 3px #CCC dashed;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    25% {
+        transform: translate3d(380px, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
