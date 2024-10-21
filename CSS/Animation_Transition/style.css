@@ -19,7 +19,7 @@ body {
     transition: transform .1s cubic-bezier(1,.53,.24,1.24);
 }
 
-/* https://cubic-bezier.com/#.17,.67,.83,.67 */
+/*Use the link:  https://cubic-bezier.com/#.17,.67,.83,.67 to get the required curvature for the timing function*/
 
 /* @keyframes bobble {
     0% {
