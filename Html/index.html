@@ -6,15 +6,24 @@
     <title>Learning HTML</title>
 </head>
 <body>
-    <div class="title">
+    <!-- Header for the main title and subtitle -->
+    <header class="title">
         <h1 class="title__main-title">Artificial Intelligence</h1>
         <h2 class="title__main-subtitle">Dawn of a new Intelligence!</h2>
-    </div>
+    </header>
 
-    <div class="email">
+    <!-- Section for email link -->
+    <section class="email">
         <a href="mailto:example@gmail.com">Send an email to AI!</a>
-    </div>
+    </section>
 
+    <!-- Section for the AI image and caption -->
+    <section class="ai-image">
+        <img src="./ai-image.jpg" alt="Artificial Intelligence concept illustration" class="ai-image__img" width="400" height="300">
+        <p class="ai-image__caption">An illustration of Artificial Intelligence at work</p>
+    </section>
+
+    <!-- Navigation for page links -->
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__item">
@@ -29,94 +38,261 @@
         </ul>
     </nav>
     
-    <div class="ai-content" id="ai-content">
-        <p class="ai-content__description">
-            <strong class="ai-content__highlight">Artificial Intelligence (AI)</strong> refers to the simulation of human intelligence in machines. These machines are <em class="ai-content__emphasis">programmed</em> to think and act like humans. AI has various <span class="ai-content__area">applications</span> in sectors such as healthcare, finance, and technology, enabling the automation of processes and the enhancement of decision-making.
-        </p>
-    </div>
-    
-    <div class="ai-list" id="ai-list">
-        <p class="ai-list__description">
-            Some key application areas of AI include:
-        </p>
-        <ul class="ai-list__unordered">
-            <li class="ai-list__unordered-item">
-                <span class="ai-list__highlight">Healthcare</span> 
-                <ul class="ai-list__nested">
-                    <li class="ai-list__nested-item">AI aids in diagnosis</li>
-                    <li class="ai-list__nested-item">Robotic surgery</li>
-                    <li class="ai-list__nested-item">Personalized treatment plans</li>
-                </ul>
-            </li>
-            <li class="ai-list__unordered-item">
-                <span class="ai-list__highlight">Finance</span>
-                <ul class="ai-list__nested">
-                    <li class="ai-list__nested-item">Algorithmic trading</li>
-                    <li class="ai-list__nested-item">Fraud detection</li>
-                    <li class="ai-list__nested-item">Risk management</li>
-                </ul>
-            </li>
-            <li class="ai-list__unordered-item">
-                <span class="ai-list__highlight">Technology</span>
-                <ul class="ai-list__nested">
-                    <li class="ai-list__nested-item">Self-driving cars</li>
-                    <li class="ai-list__nested-item">Smart assistants</li>
-                    <li class="ai-list__nested-item">Facial recognition</li>
-                </ul>
-            </li>
-        </ul>
-    
-        <p class="ai-list__description">
-            AI can be categorized into the following types:
-        </p>
-        <ol class="ai-list__ordered">
-            <li class="ai-list__ordered-item">Narrow AI
-                <dl class="ai-list__definition">
-                    <dt class="ai-list__definition-term">Example</dt>
-                    <dd class="ai-list__definition-description">Voice assistants and facial recognition.</dd>
-                </dl>
-            </li>
-            <li class="ai-list__ordered-item">General AI
-                <dl class="ai-list__definition">
-                    <dt class="ai-list__definition-term">Example</dt>
-                    <dd class="ai-list__definition-description">AI that performs any cognitive task like a human (hypothetical).</dd>
-                </dl>
-            </li>
-            <li class="ai-list__ordered-item">Superintelligent AI
-                <dl class="ai-list__definition">
-                    <dt class="ai-list__definition-term">Example</dt>
-                    <dd class="ai-list__definition-description">AI that surpasses human intelligence (theoretical concept).</dd>
-                </dl>
-            </li>
-        </ol>
-    </div>    
-    <div class="ai-links" id="ai-links">
-        <p class="ai-links__description">For more information on AI, check out these resources:</p>
+    <!-- Main content of the AI description -->
+    <main>
+        <article class="ai-content" id="ai-content">
+            <p class="ai-content__description">
+                <strong class="ai-content__highlight">Artificial Intelligence (AI)</strong> refers to the simulation of human intelligence in machines. These machines are <em class="ai-content__emphasis">programmed</em> to think and act like humans. AI has various <span class="ai-content__area">applications</span> in sectors such as healthcare, finance, and technology, enabling the automation of processes and the enhancement of decision-making.
+            </p>
+        </article>
+
+        <!-- Section for AI applications in the form of lists -->
+        <section class="ai-list" id="ai-list">
+            <p class="ai-list__description">
+                Some key application areas of AI include:
+            </p>
+            <ul class="ai-list__unordered">
+                <li class="ai-list__unordered-item">
+                    <span class="ai-list__highlight">Healthcare</span> 
+                    <ul class="ai-list__nested">
+                        <li class="ai-list__nested-item">AI aids in diagnosis</li>
+                        <li class="ai-list__nested-item">Robotic surgery</li>
+                        <li class="ai-list__nested-item">Personalized treatment plans</li>
+                    </ul>
+                </li>
+                <li class="ai-list__unordered-item">
+                    <span class="ai-list__highlight">Finance</span>
+                    <ul class="ai-list__nested">
+                        <li class="ai-list__nested-item">Algorithmic trading</li>
+                        <li class="ai-list__nested-item">Fraud detection</li>
+                        <li class="ai-list__nested-item">Risk management</li>
+                    </ul>
+                </li>
+                <li class="ai-list__unordered-item">
+                    <span class="ai-list__highlight">Technology</span>
+                    <ul class="ai-list__nested">
+                        <li class="ai-list__nested-item">Self-driving cars</li>
+                        <li class="ai-list__nested-item">Smart assistants</li>
+                        <li class="ai-list__nested-item">Facial recognition</li>
+                    </ul>
+                </li>
+            </ul>
         
-        <ul class="ai-links__list">
-            <li class="ai-links__list-item">
-                <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
-                    Wikipedia: Artificial Intelligence
-                </a>
-            </li>
-            <li class="ai-links__list-item">
-                <a href="https://www.ted.com/topics/artificial+intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
-                    TED Talks on Artificial Intelligence
-                </a>
-            </li>
-            <li class="ai-links__list-item">
-                <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
-                    IBM: What is AI?
-                </a>
-            </li>
-            <li class="ai-links__list-item">
-                <a href="A_Brief_Introduction_To_AI.pdf" target="_blank" class="ai-links__anchor" title="What is AI and how is it going to shape the future - By Dibbyo Saha, Undergraduate Student, Computer Science, Ryerson University">
-                    Download Study Material on AI
-                </a>
-            </li>
-        </ul>
-    </div>
+            <p class="ai-list__description">
+                AI can be categorized into the following types:
+            </p>
+            <ol class="ai-list__ordered">
+                <li class="ai-list__ordered-item">Narrow AI
+                    <dl class="ai-list__definition">
+                        <dt class="ai-list__definition-term">Example</dt>
+                        <dd class="ai-list__definition-description">Voice assistants and facial recognition.</dd>
+                    </dl>
+                </li>
+                <li class="ai-list__ordered-item">General AI
+                    <dl class="ai-list__definition">
+                        <dt class="ai-list__definition-term">Example</dt>
+                        <dd class="ai-list__definition-description">AI that performs any cognitive task like a human (hypothetical).</dd>
+                    </dl>
+                </li>
+                <li class="ai-list__ordered-item">Superintelligent AI
+                    <dl class="ai-list__definition">
+                        <dt class="ai-list__definition-term">Example</dt>
+                        <dd class="ai-list__definition-description">AI that surpasses human intelligence (theoretical concept).</dd>
+                    </dl>
+                </li>
+            </ol>
+        </section>    
+        
+        <!-- Section for AI resources in the form of anchor links -->
+        <section class="ai-links" id="ai-links">
+            <p class="ai-links__description">For more information on AI, check out these resources:</p>
+            
+            <ul class="ai-links__list">
+                <li class="ai-links__list-item">
+                    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
+                        Wikipedia: Artificial Intelligence
+                    </a>
+                </li>
+                <li class="ai-links__list-item">
+                    <a href="https://www.ted.com/topics/artificial+intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
+                        TED Talks on Artificial Intelligence
+                    </a>
+                </li>
+                <li class="ai-links__list-item">
+                    <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" class="ai-links__anchor" target="_blank" rel="noopener noreferrer">
+                        IBM: What is AI?
+                    </a>
+                </li>
+                <li class="ai-links__list-item">
+                    <a href="A_Brief_Introduction_To_AI.pdf" target="_blank" class="ai-links__anchor" title="What is AI and how is it going to shape the future - By Dibbyo Saha, Undergraduate Student, Computer Science, Ryerson University">
+                        Download Study Material on AI
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Preformatted section for AI text -->
+        <section class="ai-pre">
+            <p class="ai-pre__description">Preformatted text block discussing AI:</p>
+            <pre class="ai-pre__block">
+    Artificial Intelligence (AI) is a field of study 
+        that aims to create machines capable of mimicking 
+            human intelligence. AI is used in various sectors like 
+        healthcare, robotics, and finance to automate tasks 
+    and improve decision-making.
     
+        Key AI Technologies:
+            - Machine Learning (ML)
+            - Natural Language Processing (NLP)
+            - Computer Vision
+            - Robotics
     
+    AI systems learn from data, identify patterns, and make predictions 
+        based on that data, transforming industries and impacting 
+            everyday life in profound ways.
+            </pre>
+        </section>    
+        
+        <!-- Section for inline code example -->
+        <section class="ai-code">
+            <p class="ai-code__description">Here’s a simple AI function inside a <strong>code</strong> tag:</p>
+            <code class="ai-code__inline">
+                function simulateAI() { console.log("AI is running..."); }
+            </code>
+        </section>
+
+        <!-- Section for commonly used HTML entities in AI content -->
+        <section class="ai-entities">
+            <p class="ai-entities__description">
+                Artificial Intelligence (&quot;<strong>AI</strong>&quot;) is the simulation of human intelligence in machines that are designed to think and act like humans. AI &lt;has&gt; become a vital part of modern technology, impacting various industries such as healthcare, finance, and transportation. 
+                Some well-known AI applications include self-driving cars, speech recognition, and intelligent decision-making systems. These systems require an immense amount of data &amp; computational power. AI also involves machine learning (ML), where machines &apos;learn&apos; from data over time without being explicitly programmed.
+            </p>
+            
+            <p class="ai-entities__note">
+                The rise of AI comes with challenges, including ethical concerns over data privacy &amp; security. Developers must ensure AI systems adhere to legal &amp; ethical standards, protecting individuals&apos; rights. AI can lead to great innovations but also requires responsible usage &copy; 2024.
+            </p>
+        </section>
+        <section class="audio-section">
+            <h2 class="audio-section__title">Sample Audio</h2>
+            
+            <!-- Audio container div -->
+            <div class="audio-container">
+                <p class="audio-container__description">Play the sample audio:</p>
+                <audio class="audio-container__player" controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+        <section class="video-section">
+            <h2 class="video-section__title">Sample Video</h2>
+            
+            <!-- Video container div -->
+            <div class="video-container">
+                <p class="video-container__description">Play the sample video:</p>
+                <video class="video-container__player" width="640" height="360" controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </section>
+        <div class="image-map">
+            <h2 class="image-map__title">Explore AI-Related Concepts</h2>
+            
+            <!-- Image with an associated map -->
+            <img src="./ai-image.jpg" alt="AI Diagram" usemap="#ai-map" class="image-map__img" width="600" height="400">
+    
+            <!-- Defining the map -->
+            <map name="ai-map">
+                <!-- Creating clickable areas -->
+                <area shape="rect" coords="50,50,200,200" href="https://en.wikipedia.org/wiki/Machine_learning" alt="Machine Learning" class="image-map__area" title="Machine Learning">
+                <area shape="circle" coords="400,150,75" href="https://en.wikipedia.org/wiki/Neural_network" alt="Neural Networks" class="image-map__area" title="Neural Networks">
+                <area shape="poly" coords="250,250,400,400,200,400" href="https://en.wikipedia.org/wiki/Artificial_intelligence" alt="Artificial Intelligence" class="image-map__area" title="Artificial Intelligence">
+            </map>
+    
+            <p class="image-map__description">
+                Click on different areas of the image to learn more about various AI-related concepts such as Machine Learning, Neural Networks, and Artificial Intelligence.
+            </p>
+        </div>
+
+        <div class="table-container">
+            <table class="table-container__table">
+                <thead class="table-container__header">
+                    <tr class="table-container__row">
+                        <th class="table-container__heading" rowspan="2">Technology</th>
+                        <th class="table-container__heading" colspan="2">Usage</th>
+                        <th class="table-container__heading" rowspan="2">Example</th>
+                    </tr>
+                    <tr class="table-container__row">
+                        <th class="table-container__subheading">Industry</th>
+                        <th class="table-container__subheading">Function</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="table-container__body">
+                    <tr class="table-container__row">
+                        <td class="table-container__data">Machine Learning</td>
+                        <td class="table-container__data" rowspan="2">Healthcare</td>
+                        <td class="table-container__data">Diagnosing diseases</td>
+                        <td class="table-container__data">Medical Imaging AI</td>
+                    </tr>
+                    <tr class="table-container__row">
+                        <td class="table-container__data">Natural Language Processing</td>
+                        <td class="table-container__data">Analyzing patient records</td>
+                        <td class="table-container__data">Speech-to-text AI</td>
+                    </tr>
+                </tbody>
+                
+                <tr class="table-container__divider">
+                    <td colspan="4"><hr></td>
+                </tr>
+                
+                <tbody class="table-container__body">
+                    <tr class="table-container__row">
+                        <td class="table-container__data">Robotics</td>
+                        <td class="table-container__data">Manufacturing</td>
+                        <td class="table-container__data" colspan="2">Assembly line automation</td>
+                    </tr>
+                </tbody>
+                
+                <tr class="table-container__divider">
+                    <td colspan="4"><hr></td>
+                </tr>
+                
+                <tbody class="table-container__body">
+                    <tr class="table-container__row">
+                        <td class="table-container__data">Computer Vision</td>
+                        <td class="table-container__data">Security</td>
+                        <td class="table-container__data">Facial recognition</td>
+                        <td class="table-container__data">Smart surveillance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="iframe-container">
+            <h2 class="iframe-container__title">Explore AI on YouTube</h2>
+            
+            <!-- Embedded YouTube video using iframe -->
+            <iframe 
+                class="iframe-container__video" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/2ePf9rue1Ao" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+    
+            <p class="iframe-container__description">
+                The above video provides an insightful overview of Artificial Intelligence, 
+                discussing key concepts such as Machine Learning and Deep Learning.
+            </p>
+        </div>
+    
+    </main>
+
 </body>
 </html>
